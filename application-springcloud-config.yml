@@ -1,0 +1,33 @@
+---
+spring:
+  profiles: dev     #开发环境
+  application:
+    name: application-springcloud-config-dev
+---
+spring:
+  profiles: test    #测试环境
+  application:
+     name: application-springcloud-config-test
+
+
+---
+#开发环境配置
+server:
+  port: 8081
+spring:
+      profiles: dev
+      application: application-springcloud-config
+user:
+  user-name: 张三
+  age: 50
+
+---
+#测试环境配置
+server:
+  port: 8082
+spring:
+      profiles: test
+      application: application-springcloud-config
+user:
+  user-name: 李四
+  age: 25
