@@ -24,7 +24,7 @@ user:
 ---
 #测试环境配置
 server:
-  port: 8082
+  port: 8083
 spring:
       profiles: test
       application: application-springcloud-config
